@@ -1,4 +1,4 @@
-package baekjoon
+package baekjoon.bronze
 
 /*
  최소, 최대 https://www.acmicpc.net/problem/10818
@@ -21,7 +21,6 @@ fun main() {
 
     // 비교 정수 배열 문자열 -> 정수 변환
     val compIntegers = tempStrList.map { it.toInt() }
-
     // 출력
     print("${compIntegers.min()} ${compIntegers.max()}")
 }
