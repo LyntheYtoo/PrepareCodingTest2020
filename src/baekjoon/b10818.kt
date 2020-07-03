@@ -15,6 +15,13 @@ N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프�
 
 fun main() {
     // 정수의 개수 입력
+    val numOfInteger = readLine()?.toInt() ?: 0
     // 비교할 정수들 입력 (공백으로 구분)
+    val tempStrList = readLine()?.split(' ') ?: mutableListOf()
 
+    // 비교 정수 배열 문자열 -> 정수 변환
+    val compIntegers = tempStrList.map { it.toInt() }
+
+    // 출력
+    print("${compIntegers.min()} ${compIntegers.max()}")
 }
